@@ -1,0 +1,65 @@
+/*характеристики квадрата*/
+/* .block {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-top-color: royalblue;
+    border-right-color: sandybrown;
+    border-bottom-color: sienna;
+    border-left-color: springgreen;
+    /*transform: translate(20px, 20px); /*сдвиг квадрата*/
+    /*transform: scale(1.5, 1.5);
+    transform: rotate(3600deg);
+    transition-duration: 1s;
+    transition-property: transform;
+   
+} */
+/*характеристики точки*/
+/* .point {
+    width: 2px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    left: 50%;
+    top: 50%;
+} */
+
+/*выезжающее меню*/
+ /*блок с текстом и "флажок" уйдет в верхний левый угол - убрали все лишние отступы*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.block {
+width: 300px;
+height: 150px;
+background-color: grey;
+position: absolute;
+left: -300px;  /*изначальное положение блока с текстом - спрятано*/
+top: 0;
+}
+
+.block p {
+    color: white;
+    padding: 20px;
+}
+/*создаем "флажок"*/
+.block::after {
+    content: "Нажми на меня";
+    background-color: thistle;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 0;
+    width: 150px;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+}
+/*смещение после наведения*/
+.block:hover {
+    left: 0;
+    transition: 1s;
+}

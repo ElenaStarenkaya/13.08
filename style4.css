@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(247, 234, 210);
+}
+
+.phone {
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border: 5px solid grey;
+    border-radius: 50px;
+    margin: 30px auto;
+    padding: 10px 20px;
+}
+
+.camera {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;  /*делаем круг*/
+    background-color: rgb(110, 108, 108);
+    border: black;
+    margin: auto;  /*переносим камеру в центр*/
+    margin-top: 10px;
+}
+
+.sensor {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;  /*делаем круг*/
+    background-color: rgb(110, 108, 108);
+    float: left;
+}
+
+.dinamic {
+    width: 70px;
+    height: 6px;
+    border: 4px solid rgb(207, 202, 202);
+    border-radius: 6px;
+    background-color: rgb(110, 108, 108);
+    float: right;
+}
+
+.union {
+    width: 100px;
+    margin: 10px auto 20px 30%;
+    overflow: hidden; /*чтобы сработал отступ в 20 пикселей снизу*/
+}
+
+.screen {
+    background-color: black;
+    height: 75%;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid rgb(49, 49, 49);
+    margin: 20px auto auto auto;
+}
+
+.screen:hover {
+    /* background-color: indianred; */
+    /* content: url(mor.jpg); */
+    background-image: url(mor.jpg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition-property: background-image;
+    transition-duration: 1s;
+}
+
+.button:hover {
+    background-color: indigo;
+}
+
+img {
+    opacity: 0;
+    width: 100%;
+    transition: 1s;
+}
+
+img:hover {
+opacity: 1;
+transition: 1s;
+}
+
